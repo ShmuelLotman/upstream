@@ -75,6 +75,12 @@ export const LoginForm = () => {
                     type="button"
                     disabled={form.formState.isSubmitting}
                   >
+                    <Image
+                      src="/github.svg"
+                      alt="Github"
+                      width={20}
+                      height={20}
+                    />
                     Continue with Github
                   </Button>
                   <Button
@@ -83,6 +89,12 @@ export const LoginForm = () => {
                     type="button"
                     disabled={form.formState.isSubmitting}
                   >
+                    <Image
+                      src="/google.svg"
+                      alt="Google"
+                      width={20}
+                      height={20}
+                    />
                     Continue with Google
                   </Button>
                 </div>
