@@ -1,6 +1,8 @@
 import { SignupForm } from '@/features/auth/components/signup-form'
+import { requireGuest } from '@/lib/auth-utils'
 
-const SignupPage = () => {
+const SignupPage = async () => {
+  await requireGuest()
   return <SignupForm />
 }
 

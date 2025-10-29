@@ -70,10 +70,6 @@ export const SignupForm = () => {
   return (
     <div className="flex flex-col gap-6">
       <Card>
-        <CardHeader className="text-center">
-          <CardTitle>Signup</CardTitle>{' '}
-        </CardHeader>
-
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -85,6 +81,12 @@ export const SignupForm = () => {
                     type="button"
                     disabled={form.formState.isSubmitting}
                   >
+                    <Image
+                      src="/github.svg"
+                      alt="Github"
+                      width={20}
+                      height={20}
+                    />
                     Continue with Github
                   </Button>
                   <Button
@@ -93,6 +95,12 @@ export const SignupForm = () => {
                     type="button"
                     disabled={form.formState.isSubmitting}
                   >
+                    <Image
+                      src="/google.svg"
+                      alt="Google"
+                      width={20}
+                      height={20}
+                    />
                     Continue with Google
                   </Button>
                 </div>
